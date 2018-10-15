@@ -5,6 +5,7 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 <div>
+<<<<<<< HEAD
   <% if @results %>
   <ul>
     <% @results.each do |result| %>
@@ -15,4 +16,11 @@
     <% end %>
   </ul>
   <% end %>
+=======
+  <% binding.pry %>
+  <li><%= @repo["name"] %><br>
+    <%= link_to @repo["html_url"], @repo["html_url"] %><br>
+    <%= @repo["description"] %>
+</li>
+>>>>>>> a365c52c5ecc2e66e63d18a3d703c0fd17f410eb
 </div>
